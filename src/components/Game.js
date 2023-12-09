@@ -34,11 +34,10 @@ class Game extends React.Component{
         else{
             var food = this.state.food;
             var ifv=this.state.isFoodVisible;
-            if(tcount = 39)
-            {
-                food=this.generateFood();
-                ifv=true;
-            }
+            if (Math.floor(Math.random() * 200) === 0) {
+                food = this.generateFood();
+                ifv = true;
+              }
 
             if(!(body[0][0]==food[0]&&body[0][1]==food[1])) body.pop();
             else ifv=false;
