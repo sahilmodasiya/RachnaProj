@@ -1,0 +1,12 @@
+.game-tile{
+    width: 26px;
+    height: 26px;
+}
+
+.game-container{
+    width: 500px;
+    aspect-ratio:1;
+    margin: auto;
+    text-align: center;
+
+}
